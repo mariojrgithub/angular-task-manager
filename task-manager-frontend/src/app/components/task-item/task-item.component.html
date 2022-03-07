@@ -1,0 +1,5 @@
+<div [ngClass]="{reminder: task.completed === 't'}" (dblclick)="onToggle(task)">
+    <h3>{{ task.taskName }}</h3>
+    <p>{{ task.createdOn }}</p>
+    <button (click)="onDelete(task)">Delete</button>
+</div>
